@@ -1,0 +1,21 @@
+```
+# Entorno virtual
+venv/
+.venv/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Variables secretas
+.env
+
+# Archivos del Mac
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Bases de datos locales
+*.sqlite3
+```
