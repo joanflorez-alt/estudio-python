@@ -398,3 +398,19 @@ print(list_2[-3])
 number_list = [11,12,13,14,15,16,17,18,19,20]
 
 print(number_list[::4])
+
+name = "Joan Manuel Florez"
+print(name[::-1].replace(" ",""))
+
+students = ["Ana", "Mario", "Pedro"]
+print(students)
+
+students.append("Carlos")
+students.append("Laura")
+print(students)
+
+students.insert(0, "Sofia")
+print(students)
+
+students.insert(2, "JMmario")
+print(students)
