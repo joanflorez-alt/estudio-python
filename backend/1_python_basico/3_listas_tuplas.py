@@ -570,3 +570,9 @@ print(f"|{'Producto':<12}|{'Precio':>10}|")              # < izquierda, > derech
 print(f"|{'Arroz':<12}|{3500:>10,}|")
 print(f"|{'Café':<12}|{18900:>10,}|")
 
+
+print("\n *****tabla propia*****")
+
+print(f"|{"name":<10}|{"Joan":<10}|")
+print(f"|{"age":<10}|{"39":<10}|")
+print(f"|{"phone":<10}|{3143644646:<10}|")
