@@ -414,3 +414,53 @@ print(students)
 
 students.insert(2, "JMmario")
 print(students)
+
+students.extend(["luis", "juana", "carla", "alan"])
+print(students)
+
+students[1] = "WWW"
+print(students)
+
+
+clave = "1234566789"
+print("*******",clave[-4:])
+
+
+print("\n--- 6. Quitar ---")
+pendientes = ["pagar luz", "estudiar", "mercar", "estudiar"]
+
+pendientes.remove("estudiar")       # quita la PRIMERA vez que aparece ese valor
+print(pendientes)                   # ['pagar luz', 'mercar', 'estudiar']
+
+ultimo = pendientes.pop()           # quita el último y lo DEVUELVE
+print(ultimo)                       # estudiar
+print(pendientes)                   # ['pagar luz', 'mercar']
+
+primero = pendientes.pop(0)         # quita el de la posición 0 y lo devuelve
+print(primero)                      # pagar luz
+
+del pendientes[0]                   # borra por posición, sin devolver nada
+print(pendientes)                   # []
+
+# pendientes.remove("viajar")       # ValueError: ese valor no está (descomenta)
+
+lista_temporal = [1, 2, 3]
+lista_temporal.clear()              # vacía la lista completa
+print(lista_temporal)   
+
+facturas = ["luz", "agua", "gas", "internet", "vigilancia", "luz"]
+print(facturas)
+
+facturas.remove("luz")
+print(facturas)
+
+facturas.append("luz")
+print(facturas)
+facturas.pop()
+print(facturas) 
+
+facturas.pop(4)
+print(facturas)
+
+del facturas[1]
+print(facturas) 

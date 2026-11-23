@@ -345,6 +345,9 @@ git push
 ```
 
 ```bash
+gh repo view --web
+
+```bash
 deactivate
 ```
 
