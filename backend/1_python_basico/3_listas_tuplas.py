@@ -464,3 +464,109 @@ print(facturas)
 
 del facturas[1]
 print(facturas) 
+
+print("\n--- 7. Buscar y contar ---")
+
+calificaciones = [3, 4.5, 3.1, 4.8, 5, 4, 1, 2, 2, 2, 0.5]
+
+print( 8 in calificaciones)
+
+print(3 not in calificaciones)
+
+print(calificaciones.index(2))
+
+print(calificaciones.count(2))
+
+lista_names = ["ana", "mario", "mario", "maria", "mario"]
+print(lista_names.count("mario"))
+
+"""
+print(4.5 in notas)                 # True    ¿está ese valor?
+print(1.0 in notas)                 # False
+print(1.0 not in notas)             # True
+print(notas.index(2.8))             # 3       ¿en qué posición está?
+print(notas.count(4.5))             # 2       ¿cuántas veces aparece?
+
+# Funciones útiles con listas de números
+print(len(notas))                   # 5      cantidad
+print(min(notas))                   # 2.8    el menor
+print(max(notas))                   # 5.0    el mayor
+print(sum(notas))                   # 19.8   la suma
+"""
+
+#tuplas
+
+fecha_cumple = (4, 9, 1987)
+print(fecha_cumple)
+print(type(fecha_cumple))
+day, month, year = fecha_cumple
+
+print("dia:", day, "mes:", month, "ano:", year)
+
+"""print("\n--- 14. f-strings ---")
+nombre = "Joan"
+edad = 30
+salario = 4_500_000
+promedio = 4.2666666
+
+print(f"Hola, soy {nombre} y tengo {edad} años")
+print(f"El próximo año tendré {edad + 1}")                # expresiones dentro de { }
+print(f"Mi nombre en mayúsculas: {nombre.upper()}")      # métodos dentro de { }
+print(f"Primera ciudad de la lista: {ciudades[0]}")      # índices dentro de { }
+
+# Formato de números con  :
+print(f"Salario: {salario:,}")                           # 4,500,000   separador de miles
+print(f"Salario: ${salario:,}".replace(",", "."))        # $4.500.000  formato colombiano
+print(f"Promedio: {promedio:.2f}")                       # 4.27        2 decimales
+print(f"Avance: {0.756:.1%}")                            # 75.6%       porcentaje
+
+# Alinear (útil para imprimir tablas)
+print(f"|{'Producto':<12}|{'Precio':>10}|")              # < izquierda, > derecha
+print(f"|{'Arroz':<12}|{3500:>10,}|")
+print(f"|{'Café':<12}|{18900:>10,}|")
+
+# Truco para depurar: el = muestra el nombre de la variable y su valor
+print(f"{edad=}")      
+
+"""
+
+name = "Manuel"
+age = 39
+
+phrase = f"My name is {name.upper()} and next year I'll be {age + 1} years old"
+print(phrase)
+
+citys = ["Bogotá", "cucuta", "medellin", "cali"]
+
+print(phrase, f"y la segunda ciudad de la lista es {citys[1]}")
+
+
+sueldo = 7_343_000
+
+print(f"sueldo  {sueldo:,}")
+print(f"sueldo  {sueldo:,}".replace(",", "."))
+
+
+notas = [2,3,1,5,6,9,11,20]
+print(notas)
+
+print(sorted(notas))
+print(notas)
+
+notas.sort()
+print(notas)
+
+promedio = sum(notas)/ len(notas)
+print(promedio)
+print(f"El promedio de las notas es {promedio:.1f}")
+
+decimal = 0.23445
+porcentaje = f"en porcentaje es {decimal:.1%}"
+print(porcentaje)
+
+print("\n---Tablas--- ")
+
+print(f"|{'Producto':<12}|{'Precio':>10}|")              # < izquierda, > derecha
+print(f"|{'Arroz':<12}|{3500:>10,}|")
+print(f"|{'Café':<12}|{18900:>10,}|")
+
